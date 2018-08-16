@@ -83,56 +83,6 @@
     "group": "MeetingPlanner",
     "version": "1.0.0",
     "type": "post",
-    "url": "/api/v1/maeetingplanner/login",
-    "title": "api for user login.",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "string",
-            "optional": false,
-            "field": "email",
-            "description": "<p>email of the user. (body params) (required)</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "string",
-            "optional": false,
-            "field": "password",
-            "description": "<p>password of the user. (body params) (required)</p>"
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "object",
-            "optional": false,
-            "field": "myResponse",
-            "description": "<p>shows error status, message, http status code, result.</p>"
-          }
-        ]
-      },
-      "examples": [
-        {
-          "title": "Success-Response:",
-          "content": " {\n    \"error\": false,\n    \"message\": \"Login Successful\",\n    \"status\": 200,\n    \"data\": {\n        \"authToken\": \"eyJhbGciOiJIUertyuiopojhgfdwertyuVCJ9.MCwiZXhwIjoxNTIwNDI29tIiwibGFzdE5hbWUiE4In19.hAR744xIY9K53JWm1rQ2mc\",\n        \"userDetails\": {\n        \"mobileNumber\": 2234435524,\n        \"email\": \"someone@mail.com\",\n        \"lastName\": \"Sengar\",\n        \"firstName\": \"Rishabh\",\n        \"userId\": \"-E9zxTYA8\"\n    }\n\n}",
-          "type": "object"
-        }
-      ]
-    },
-    "filename": "app/routes/user.js",
-    "groupTitle": "MeetingPlanner",
-    "name": "PostApiV1MaeetingplannerLogin"
-  },
-  {
-    "group": "MeetingPlanner",
-    "version": "1.0.0",
-    "type": "post",
     "url": "/api/v1/meetingplanner/createMeeting",
     "title": "api for  createMeeting.",
     "parameter": {
@@ -285,6 +235,56 @@
     "filename": "app/routes/user.js",
     "groupTitle": "MeetingPlanner",
     "name": "PostApiV1MeetingplannerForgot"
+  },
+  {
+    "group": "MeetingPlanner",
+    "version": "1.0.0",
+    "type": "post",
+    "url": "/api/v1/meetingplanner/login",
+    "title": "api for user login.",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "email",
+            "description": "<p>email of the user. (body params) (required)</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "password",
+            "description": "<p>password of the user. (body params) (required)</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "object",
+            "optional": false,
+            "field": "myResponse",
+            "description": "<p>shows error status, message, http status code, result.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": " {\n    \"error\": false,\n    \"message\": \"Login Successful\",\n    \"status\": 200,\n    \"data\": {\n        \"authToken\": \"eyJhbGciOiJIUertyuiopojhgfdwertyuVCJ9.MCwiZXhwIjoxNTIwNDI29tIiwibGFzdE5hbWUiE4In19.hAR744xIY9K53JWm1rQ2mc\",\n        \"userDetails\": {\n        \"mobileNumber\": 2234435524,\n        \"email\": \"someone@mail.com\",\n        \"lastName\": \"Sengar\",\n        \"firstName\": \"Rishabh\",\n        \"userId\": \"-E9zxTYA8\"\n    }\n\n}",
+          "type": "object"
+        }
+      ]
+    },
+    "filename": "app/routes/user.js",
+    "groupTitle": "MeetingPlanner",
+    "name": "PostApiV1MeetingplannerLogin"
   },
   {
     "group": "MeetingPlanner",
